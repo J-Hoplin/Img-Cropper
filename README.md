@@ -1,0 +1,2 @@
+# Img-Cropper
+Img Cropper

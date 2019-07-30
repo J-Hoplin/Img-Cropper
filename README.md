@@ -43,21 +43,21 @@ Image Cropping Program : Data Preprocessing for CNN(Convolution Neural Network)
 
 1 . Firstly let's say there is one photo for example
 
-![Example](/img/1.jpg)
+![Example](/img/1.JPG)
 
 2 . From Now I will tell  you the process to use this program.(This is only Python Command Version. GUI Version Will update soon)
 
 - First get your image's directory
 
-![ex1](/img/2.jpg)
+![ex1](/img/2.JPG)
 
 - Put your directory in to first input line and write down image format you want to crop. You need to write only one type between .jpg & .png. In this example I will use .jpg format.
 
-![ex2](/img/3.jpg)
+![ex2](/img/3.JPG)
 
 - Then Program will show you the directory and the list of file name.
 
-![ex3](/img/4.jpg)
+![ex3](/img/4.JPG)
 
 - Next enter width height value in pixels to crop image.(Default set as only pixel)
 

@@ -69,7 +69,7 @@ Image Cropping Program : Data Preprocessing for CNN(Convolution Neural Network)
 
 - When you finish these process program will show you the picture's pixel value of width and height, and show the directory that cropped image has been saved.
 
-![ex6](/img/8.jpg)
+![ex6](/img/8.JPG)
 
 - When you go to stored directory you can see that the same file was created as the name of the picture you cropped.
 

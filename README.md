@@ -43,7 +43,7 @@ Image Cropping Program : Data Preprocessing for CNN(Convolution Neural Network)
 
 1 . Firstly let's say there is one photo for example
 
-![Example](/img/1.JPG)
+![Example](/img/1.jpg)
 
 2 . From Now I will tell  you the process to use this program.(This is only Python Command Version. GUI Version Will update soon)
 
@@ -61,7 +61,7 @@ Image Cropping Program : Data Preprocessing for CNN(Convolution Neural Network)
 
 - Next enter width height value in pixels to crop image.(Default set as only pixel)
 
-![ex4](/img/5.jpg)
+![ex4](/img/5.JPG)
 
 - Next if you need to overlap your photo, enter percentage of overlap degree.
 

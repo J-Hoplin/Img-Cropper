@@ -1,12 +1,17 @@
-import PIL
-from PIL import Image
-import io
-import os
-import cv2
-import glob
-import sys
-import platform as pl
-import numpy as np
+try:
+    import sys
+    import PIL
+    from PIL import Image
+    import io
+    import os
+    import cv2
+    import glob
+    import platform as pl
+    import numpy as np
+
+except ImportError:
+    print("Some modules used in program not found. Please check again.")
+    sys.exit()
 
 def dir_Korean_change(path):
     dir_n = open(path.encode("utf-8"), "rb")
@@ -53,24 +58,35 @@ print("List of Directory : ",final_jpg_dir)
 print("List of Img File name : ",final_jpg_list)
 
 #size of width for cropping
-crop_size_w = int(input("Enter width for Cropping : "))
+try:
+    crop_size_w = int(input("Enter width for Cropping : "))
+except ValueError:
+    print("Value Error : Please give data as inteager type")
+    sys.exit()
 #size of height for cropping
-crop_size_h = int(input("Enter height for Cropping : "))
+try:
+    crop_size_h = int(input("Enter height for Cropping : "))
+except ValueError:
+    print("Value Error : Please give data as inteager type")
+    sys.exit()
 
 #overlap percentage value
-crop_overlap_w =int(input("Enter width overlap degree(Standard : Percentage) : "))
-crop_overlap_h = int(input("Enter height overlap degree(Standard : Percentage) : "))
-
+try:
+    crop_overlap_w =int(input("Enter width overlap degree(Standard : Percentage) : "))
+except ValueError:
+    print("Value Error : Please give data as inteager type")
+    sys.exit()
+try:
+    crop_overlap_h = int(input("Enter height overlap degree(Standard : Percentage) : "))
+except ValueError:
+    print("Value Error : Please give data as inteager type")
 
 for count in range(0,len(final_jpg_dir)):
     n_dir = directory + "\\" + final_jpg_list[count]
 
-    try:
-        if not(os.path.isdir(n_dir)):
+    if not(os.path.isdir(n_dir)):
             os.mkdir(n_dir)
-    except OSError as OE:
-        print("Unable to Create Directory in " + n_dir)
-        sys.exit()
+    sys.exit()
 
     #get pixel size of image with PIL.Image
     n_data_size = Image.open(final_jpg_dir[count])
@@ -90,6 +106,7 @@ for count in range(0,len(final_jpg_dir)):
     overlap_h = (int)(crop_size_h * ((100 - crop_overlap_h) / 100))
 
     #image's numpy data for OpenCV
+
     n_data = dir_Korean_change(final_jpg_dir[count])
     #OpenCV lib has default setting as BGR so need to Convert RGB
     n_data = cv2.cvtColor(n_data,cv2.COLOR_BGR2RGB)

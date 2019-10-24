@@ -86,7 +86,6 @@ for count in range(0,len(final_jpg_dir)):
 
     if not(os.path.isdir(n_dir)):
             os.mkdir(n_dir)
-    sys.exit()
 
     #get pixel size of image with PIL.Image
     n_data_size = Image.open(final_jpg_dir[count])

@@ -1,3 +1,23 @@
+'''
+Code Written By J-Hoplin
+
+Contact with E-mail
+-> jhoplin7259@gmail.com
+
+if cv2 module not working install modules and change environment variable settings
+
+CV2
+    - If only main module : pip3 install opencv-python
+    - Use Extra module : pip3 install opencv-contrib-python
+
+    Recommend to install second one
+
+if PIL module not working install modules and change environment variable settings
+
+PIL
+
+    - pip install image
+'''
 try:
     import sys
     import PIL
@@ -54,8 +74,7 @@ else:
     print("That format is not supported")
     sys.exit()
 
-print("List of Directory : ",final_jpg_dir)
-print("List of Img File name : ",final_jpg_list)
+print("List of Img File name : ", ",".join(map(str,final_jpg_list)))
 
 #size of width for cropping
 try:

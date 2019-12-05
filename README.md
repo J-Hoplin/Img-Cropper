@@ -13,9 +13,7 @@ Image Cropping Program : Image data Preprocessing tool for CNN(Convolution Neura
 
 4 . Working Tool : [JetBrain Pycharm](https://www.jetbrains.com/pycharm/)(Community, 2019.1 , as Virtual Environment)
 
-5 . Operation Time : 6hr
-
-6 . Module & Package in used
+5 . Module & Package in used
 
     - PIL(Python Image Library)
     - io
@@ -25,7 +23,7 @@ Image Cropping Program : Image data Preprocessing tool for CNN(Convolution Neura
     - sys
     - platform
     - numpy
-7 . Way to install Packages not supported by Python by default(Recommend : Your Python needs to be added to PATH)
+6 . Way to install Packages not supported by Python by default(Recommend : Your Python needs to be added to PATH)
 
     - If your PC has Python2 use command 'pip3'
     1 . PIL
@@ -36,9 +34,9 @@ Image Cropping Program : Image data Preprocessing tool for CNN(Convolution Neura
         - If only main module : pip3 install opencv-python
         - Use Extra module : pip3 install opencv-contrib-python
 
-8 . Supporting OS : Windows, Linux, Mac OS
+7 . Supporting OS : Windows, Linux, Mac OS
 
-9 . Supporting image format : **.jpg**, **.png**
+8 . Supporting image format : **.jpg**, **.png**
 ***
 
 ## How it Works

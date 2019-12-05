@@ -1,4 +1,4 @@
-Image Cropping Program : Image data Preprocessing for CNN(Convolution Neural Network)
+Image Cropping Program : Image data Preprocessing tool for CNN(Convolution Neural Network)
 ===
 
 ***
